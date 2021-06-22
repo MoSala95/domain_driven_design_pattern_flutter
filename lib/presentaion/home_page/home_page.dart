@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/user_auth_facade.dart';
-import 'package:domain_design_pattern_flutter/presentaion/common_pages/about_page.dart';
-import 'package:domain_design_pattern_flutter/presentaion/common_pages/contact_page.dart';
-import 'package:domain_design_pattern_flutter/presentaion/common_pages/privacey_policy.dart';
-import 'package:domain_design_pattern_flutter/presentaion/common_pages/terms_conditions.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/user_auth_facade.dart';
 import 'package:domain_design_pattern_flutter/presentaion/register/register_page.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -128,9 +124,9 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold),
                   ),
                   leading: Icon(Icons.headset_mic, size: 22, color: Colors.black),
-                   onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ContactUsPage())
-                  ),
+                  /* onTap: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ContactUsPage()),
+                  ),*/
                 ),
                 Divider(height: 2, color: Colors.black45),
                 ListTile(

@@ -11,10 +11,9 @@ import 'package:meta/meta.dart';
 import 'package:domain_design_pattern_flutter/domain/auth/I_auth_facade.dart';
 import 'package:domain_design_pattern_flutter/domain/auth/auth_failures.dart';
 import 'package:domain_design_pattern_flutter/domain/auth/value_objects.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/api_routes.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/user_auth_facade.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/api_routes.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/user_auth_facade.dart';
 import 'package:http/http.dart' as http;
-import 'package:domain_design_pattern_flutter/presentaion/shared_widgets/shared_widgets.dart';
 
 part 'register_user_event.dart';
 part 'register_user_state.dart';

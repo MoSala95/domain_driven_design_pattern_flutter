@@ -2,7 +2,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/models/user_with_token.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/models/user_with_token.dart';
 
 import 'auth_failures.dart';
 import 'value_objects.dart';

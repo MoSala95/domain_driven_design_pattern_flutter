@@ -7,7 +7,7 @@ import 'package:meta/meta.dart';
 import 'package:domain_design_pattern_flutter/domain/auth/I_auth_facade.dart';
 import 'package:domain_design_pattern_flutter/domain/auth/auth_failures.dart';
 import 'package:domain_design_pattern_flutter/domain/auth/value_objects.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/user_auth_facade.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/user_auth_facade.dart';
 
 part 'sign_user_event.dart';
 part 'sign_user_state.dart';

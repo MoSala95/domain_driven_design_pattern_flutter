@@ -11,10 +11,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 
 class RegisterForm extends StatelessWidget {
-  String intialCountry;
 
-  RegisterForm({required this.intialCountry});
-  @override
+   @override
   Widget build(BuildContext context) {
     return BlocConsumer<RegisterUserBloc, RegisterUserState>(
       listener: (context, state) {

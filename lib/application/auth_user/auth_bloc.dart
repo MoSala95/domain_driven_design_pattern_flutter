@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:meta/meta.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/models/user_with_token.dart';
-import 'package:domain_design_pattern_flutter/infrastructure/auth/user_auth_facade.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/models/user_with_token.dart';
+import 'package:domain_design_pattern_flutter/infrastructure/user_auth_facade.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';
