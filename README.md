@@ -1,6 +1,13 @@
 # domain_design_pattern_flutter
 
-A new Flutter application.
+This is a starter project of how you can structure and architect your Flutter Apps With Domain Driven Design.
+
+The Project contains fully implemented real world Login, Resgister and User Authantication process that shows how you make real Api calls and how to deal with different states 
+using Bloc as your State Management.
+
+
+Disclaimer: heavily inspired by Clean, Onion, Layer architecure
+
 
 ## Getting Started
 
