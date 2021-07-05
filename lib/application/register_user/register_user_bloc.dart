@@ -53,7 +53,7 @@ class RegisterUserBloc extends Bloc<RegisterUserEvent, RegisterUserState> {
            authFailureOrSuccessOption: none(),
 
         ), (r) => state.copyWith(
-          userName:r? UserName(e.userNameStr,):UserName(e.userNameStr,),
+          userName:UserName(e.userNameStr,),
 
           authFailureOrSuccessOption: none(),
 
