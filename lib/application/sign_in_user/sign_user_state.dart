@@ -11,7 +11,7 @@ abstract class SignUserState with _$SignUserState {
   }) = _SignUserState;
 
   factory SignUserState.initial() => SignUserState(
-    userName: UserName('',false),
+    userName: UserName(''),
     password: Password(''),
     showErrorMessages: false,
     isSubmitting: false,
