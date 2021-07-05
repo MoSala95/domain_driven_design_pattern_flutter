@@ -48,12 +48,12 @@ class RegisterUserBloc extends Bloc<RegisterUserEvent, RegisterUserState> {
        Either<AuthFailures, bool> ?userNameAvailability;
        userNameAvailability=await checkUserNameAvailability(value: e.userNameStr,fieldName: 'username');
        yield userNameAvailability.fold((l) =>  state.copyWith(
-            userName:UserName(e.userNameStr,false),
+            userName:UserName(e.userNameStr,),
 
            authFailureOrSuccessOption: none(),
 
         ), (r) => state.copyWith(
-          userName:r? UserName(e.userNameStr,true):UserName(e.userNameStr,false),
+          userName:r? UserName(e.userNameStr,):UserName(e.userNameStr,),
 
           authFailureOrSuccessOption: none(),
 

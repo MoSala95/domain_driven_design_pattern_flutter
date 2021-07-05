@@ -13,7 +13,7 @@ abstract class RegisterUserState with _$RegisterUserState {
 
   factory RegisterUserState.initial() => RegisterUserState(
     fullName: FullName(""),
-    userName: UserName("",false),
+    userName: UserName(""),
     password: Password(''),
     showErrorMessages: false,
     isSubmitting: false,
