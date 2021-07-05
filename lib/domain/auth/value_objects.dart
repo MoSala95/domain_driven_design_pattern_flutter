@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:domain_design_pattern_flutter/domain/core/value_object_failure.dart';
 import 'package:domain_design_pattern_flutter/domain/core/objects_validators.dart';
 import 'package:domain_design_pattern_flutter/domain/core/value_object_super_class.dart';
+
  class FullName extends ValueObjectSuperClass{
   final Either<ValueObjectFailure<String>,String> value;
 
@@ -23,8 +24,8 @@ class Password extends ValueObjectSuperClass{
 class UserName extends ValueObjectSuperClass{
  final Either<ValueObjectFailure<String>,String> value;
 
- factory UserName(String input,bool isAvailable){
-  return UserName._( validateUserName(input,isAvailable),);
+ factory UserName(String input){
+  return UserName._( validateUserName(input),);
  }
 
  UserName._(this.value);

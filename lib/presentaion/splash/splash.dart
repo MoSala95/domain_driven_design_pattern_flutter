@@ -28,7 +28,7 @@ class SplashPage extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 64.0),
                     child: Image.asset(
                       "assets/images/camera.png",
-                      width: MediaQuery.of(context).size.width / 3.4,
+                      width: MediaQuery.of(context).size.width / 3,
                       height: MediaQuery.of(context).size.height / 4,
                     ),
                   ),

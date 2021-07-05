@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:domain_design_pattern_flutter/domain/core/value_object_failure.dart';
 import 'package:http/http.dart' as http;
+
 /*Either<ValueObjectFailure<String>,String> validateEmail(String input){
   const emailRegex =
   r"""^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+""";
@@ -24,12 +25,9 @@ Either<ValueObjectFailure<String>,String> validateFullName(String input){
   else
     return left(ValueObjectFailure.invalidFullName(value: input));
 }
-Either<ValueObjectFailure<String>,String> validateUserName(String input,bool isAvailable){
+Either<ValueObjectFailure<String>,String> validateUserName(String input){
   if(input.length>4){
-    if(isAvailable)
     return right(input);
-    else
-      return left(ValueObjectFailure.invalidUserName(value: "user name already exists try different one"));
 
   }
    else

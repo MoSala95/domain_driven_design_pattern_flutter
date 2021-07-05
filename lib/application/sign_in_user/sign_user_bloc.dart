@@ -27,7 +27,7 @@ class SignUserBloc extends Bloc<SignUserEvent, SignUserState> {
    yield* event.map(
       userNameChanged: (e) async* {
         yield state.copyWith(
-          userName: UserName(e.userNameStr,true),
+          userName: UserName(e.userNameStr),
           authFailureOrSuccessOption: none(),
         );
       },
