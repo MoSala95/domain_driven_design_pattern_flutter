@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:domain_design_pattern_flutter/application/auth_user/auth_bloc.dart';
 import 'package:domain_design_pattern_flutter/infrastructure/user_auth_facade.dart';
-import 'package:domain_design_pattern_flutter/presentaion/App.dart';
- import 'package:domain_design_pattern_flutter/presentaion/splash/splash.dart';
+import 'package:domain_design_pattern_flutter/presentaion/splash/splash.dart';
 
 void main() {
   runApp(MyApp());
